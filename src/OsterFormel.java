@@ -1,6 +1,12 @@
-public class Main {
+import java.util.Scanner;
+
+public class OsterFormel {
     public static void main(String[] args) {
-        int J = 2022;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Jahr?");
+        int jahr =  scan.nextInt();
+
+        int J = jahr;
         int N = J - 1900;
         int A = N % 19;
         int B = ((7 * A + 1) / 19);
@@ -11,6 +17,9 @@ public class Main {
 
         if (P>0){
             System.out.println("Osternsonntag ist am " + P + " April");
+        }else{
+            P = P+31;
+            System.out.println("Ostersonntag ist am " + P + " April");
         }
 
 
