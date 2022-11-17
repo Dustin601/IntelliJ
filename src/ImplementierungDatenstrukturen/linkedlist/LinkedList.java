@@ -34,7 +34,7 @@ public class LinkedList implements HTLList {
         Node actual = root;
         for (int i = 0; i<index - 1; i++){
             actual = actual.getNext();
-            actual = actual.setNext(value);
         }
+        actual.setNext(null);
     }
 }
