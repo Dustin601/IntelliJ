@@ -8,6 +8,7 @@ public class Main {
         ll.add(6);
         System.out.println(ll.get(2));
         ll.remove(1);
-        System.out.println(ll.get(1));
+        System.out.println(ll.get(2));
+
     }
 }
