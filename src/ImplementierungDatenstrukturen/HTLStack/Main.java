@@ -10,5 +10,6 @@ public class Main {
         sl.push(5);
         System.out.println(sl.peak());
         sl.pop();
+
     }
 }
