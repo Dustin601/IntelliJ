@@ -2,25 +2,20 @@ package ImplementierungDatenstrukturen.HTLStack;
 
 public class Node {
     private int value;
-    private Node next;
+    private Node previous;
 
-    public Node(int value){
+
+    public Node(int value, Node previous){
         this.value = value;
+        this.previous = previous;
     }
 
     public int getValue() {
         return value;
     }
 
-    public void setValue(int value) {
-        this.value = value;
+    public Node getPrevious() {
+        return previous;
     }
 
-    public Node getNext() {
-        return next;
-    }
-
-    public void setNext(Node next) {
-        this.next = next;
-    }
 }

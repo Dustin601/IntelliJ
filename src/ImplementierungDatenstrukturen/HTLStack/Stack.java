@@ -8,25 +8,23 @@ public class Stack implements HTLStackList {
 
     @Override
     public void push(int value) {
-        Node n = new Node(value);
-        if (top == null) {
-            top = n;
-        } else {
-            Node actual = top;
-            while (actual.getNext() != null) {
-                actual = actual.getNext();
-            }
-            actual.setNext(n);
+        top = new Node(value, top);
+    }
+
+    @Override
+    public void pop() {
+        if(top == null){
+            return;
+        } else{
+            top = top.getPrevious();
+            return;
         }
+
     }
 
     @Override
-    public int pop(int index) {
-        return 0;
-    }
-
-    @Override
-    public int peak(int index) {
-        return 0;
+    public int peak() {
+        Node actual = top;
+        return actual.getValue();
     }
 }

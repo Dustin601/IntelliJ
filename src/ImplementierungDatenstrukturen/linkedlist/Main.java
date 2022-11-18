@@ -6,9 +6,13 @@ public class Main {
         ll.add(4);
         ll.add(5);
         ll.add(6);
-        System.out.println(ll.get(2));
-        ll.remove(1);
-        System.out.println(ll.get(2));
+        ll.add(7);
+        ll.add(8);
+        ll.add(9);
 
+        ll.remove(1);
+        System.out.println(ll.get(0));
+        System.out.println(ll.get(1));
+        System.out.println(ll.get(2));
     }
 }
